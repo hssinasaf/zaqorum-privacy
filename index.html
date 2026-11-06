@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
@@ -257,8 +256,9 @@
         <div class="nav-links">
           <a href="#about">عن التطبيق</a>
           <a href="#features">المميزات</a>
-          <a href="privacy-policy.html">سياسة الخصوصية</a>
-          <a href="terms.html">شروط الاستخدام</a>
+          <a data-site-link="privacy" href="privacy-policy.html">سياسة الخصوصية</a>
+          <a data-site-link="terms" href="terms.html">شروط الاستخدام</a>
+          <a data-site-link="contact" href="contact.html">تواصل معنا</a>
         </div>
       </nav>
     </div>
@@ -284,7 +284,7 @@
             اكتشف ZAQORUM
           </a>
 
-          <a class="button button-secondary" href="privacy-policy.html">
+          <a class="button button-secondary" data-site-link="privacy" href="privacy-policy.html">
             سياسة الخصوصية
           </a>
         </div>
@@ -352,16 +352,17 @@
       </div>
     </section>
 
-  </main>
+  <section class="section" id="contact"><div class="container"><h2>تواصل مع ZAQORUM</h2><p class="intro">للاستفسارات والدعم، راسلنا عبر البريد الرسمي أو صفحة التواصل.</p><div class="buttons" style="margin-top:24px"><a class="button button-primary" data-site-link="contact" href="contact.html">صفحة التواصل</a><a class="button button-secondary" data-site-email href="mailto:zaqorum.app@gmail.com">zaqorum.app@gmail.com</a><a class="button button-secondary" data-site-link="privacy" href="privacy-policy.html">سياسة الخصوصية</a><a class="button button-secondary" data-site-link="terms" href="terms.html">شروط الاستخدام</a></div><p class="intro" style="font-size:13px;margin-top:18px">Facebook: ZAQORUM · TikTok: @zaqorum — ستُفعّل الروابط بعد التحقق من الحسابات الرسمية.</p></div></section>
+</main>
 
   <footer>
     <div class="container">
       <p>ZAQORUM — رحلة رقمية عبر الكتابات القديمة</p>
 
       <p>
-        <a href="privacy-policy.html">سياسة الخصوصية</a>
+        <a data-site-link="privacy" href="privacy-policy.html">سياسة الخصوصية</a>
         |
-        <a href="terms.html">شروط الاستخدام</a>
+        <a data-site-link="terms" href="terms.html">شروط الاستخدام</a>
         |
         <a href="contact.html">تواصل معنا</a>
       </p>
@@ -377,6 +378,8 @@
       new Date().getFullYear();
   </script>
 
+<script src="site-config.js"></script>
 </body>
 </html>
-```
+
+
